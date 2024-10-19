@@ -624,8 +624,8 @@ class _MyHomePageState extends State<MyHomePage> {
       builder: (BuildContext context) {
         return Container(
           height: MediaQuery.of(context).size.height,
-          decoration: const BoxDecoration(
-            color: Colors.white,
+          decoration: BoxDecoration(
+            color: Theme.of(context).scaffoldBackgroundColor, // Dynamic color
           ),
           child: Stack(
             children: [

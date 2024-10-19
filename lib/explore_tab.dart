@@ -160,8 +160,8 @@ class _ExploreTabState extends State<ExploreTab> {
       builder: (BuildContext context) {
         return Container(
           height: MediaQuery.of(context).size.height,
-          decoration: const BoxDecoration(
-            color: Colors.white,
+          decoration: BoxDecoration(
+            color: Theme.of(context).scaffoldBackgroundColor, // Use theme background color
           ),
           child: Stack(
             children: [
@@ -321,7 +321,7 @@ class _ExploreTabState extends State<ExploreTab> {
                         minHeight: 120.0, // Increased height for search bar and chips
                         maxHeight: 120.0,
                         child: Container(
-                          color: Colors.white,
+                          color: Theme.of(context).scaffoldBackgroundColor, // Use theme background color
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
                             children: [
@@ -404,7 +404,7 @@ class _ExploreTabState extends State<ExploreTab> {
             : 48,
         height: 48,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).cardColor, // Use theme card color
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
