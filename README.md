@@ -1,6 +1,6 @@
-# myapp
+# My WallPaper App
 
-A new Flutter project.
+My First Ever Flutter Project
 
 ## Getting Started
 
